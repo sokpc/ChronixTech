@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Chronix Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <nav class="glass-nav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="portifolio.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main class="container" style="padding-top: 150px; padding-bottom: 50px;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <p style="text-transform: uppercase; color: var(--accent); letter-spacing: 2px; font-size: 0.8rem; font-weight: 700;">Vamos nos conectar</p>
+            <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin: 10px 0;">Entre em contato <span>comigo</span></h1>
+            <p style="color: var(--text-p);">Vamos tirar o seu próximo projeto do papel.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+            
+            <div class="glass-card">
+                <h3>Detalhes de Contato</h3>
+                <p style="font-size: 0.9rem; margin-bottom: 30px;">Para uma resposta mais rápida, utilize o e-mail corporativo.</p>
+                
+                <div style="display: flex; flex-direction: column; gap: 25px;">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div class="icon-box" style="margin-bottom: 0; width: 45px; height: 45px;"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <p style="font-size: 0.7rem; color: var(--text-p); margin: 0; font-weight: 800;">E-MAIL</p>
+                            <p style="margin: 0; font-weight: 600;">chronix.tech@outlook.com</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div class="icon-box" style="margin-bottom: 0; width: 45px; height: 45px;"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <p style="font-size: 0.7rem; color: var(--text-p); margin: 0; font-weight: 800;">LINKEDIN</p>
+                            <p style="margin: 0; font-weight: 600;">rafaelcardoso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card">
+                <form action="#" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div style="grid-column: span 1;">
+                        <label style="font-size: 0.7rem; font-weight: 700; color: var(--text-p); display: block; margin-bottom: 8px;">PRIMEIRO NOME *</label>
+                        <input type="text" placeholder="Nome" class="glass-input" style="margin-bottom: 0;" required>
+                    </div>
+                    <div style="grid-column: span 1;">
+                        <label style="font-size: 0.7rem; font-weight: 700; color: var(--text-p); display: block; margin-bottom: 8px;">SOBRENOME *</label>
+                        <input type="text" placeholder="Sobrenome" class="glass-input" style="margin-bottom: 0;" required>
+                    </div>
+                    <div style="grid-column: span 2;">
+                        <label style="font-size: 0.7rem; font-weight: 700; color: var(--text-p); display: block; margin-bottom: 8px;">ENDEREÇO DE E-MAIL *</label>
+                        <input type="email" placeholder="seu@email.com" class="glass-input" style="margin-bottom: 0;" required>
+                    </div>
+                    <div style="grid-column: span 2;">
+                        <label style="font-size: 0.7rem; font-weight: 700; color: var(--text-p); display: block; margin-bottom: 8px;">SUA MENSAGEM *</label>
+                        <textarea placeholder="Como posso ajudar seu negócio?" class="glass-input" rows="4" style="margin-bottom: 0;" required></textarea>
+                    </div>
+                    <div style="grid-column: span 2; margin-top: 10px;">
+                        <button type="submit" class="btn-primary" style="width: auto; padding: 12px 35px; background: var(--accent); color: white;">
+                            Enviar mensagem <i class="fas fa-arrow-right" style="margin-left: 8px;"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 40px 0; color: var(--text-p); font-size: 0.8rem;">
+    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --bg: #020408;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.08);
+    --accent: #3b82f6;
+    --text-p: #94a3b8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+body {
+    background-color: var(--bg);
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.bg-glow {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at 50% -10%, #1e293b 0%, transparent 50%);
+    z-index: -1;
+}
+
+/* Container mais largo para preencher a tela */
+.container { 
+    max-width: 1250px; 
+    margin: 0 auto; 
+    padding: 0 40px; 
+}
+
+.glass-nav {
+    position: fixed; top: 20px; left: 50%; transform: translateX(-50%);
+    background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px);
+    border: 1px solid var(--border); padding: 12px 35px; border-radius: 100px;
+    display: flex; gap: 25px; z-index: 1000;
+}
+
+.glass-nav a { color: var(--text-p); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: 0.3s; }
+.glass-nav a:hover { color: var(--accent); }
+
+/* Hero Section com mais altura */
+.hero { 
+    padding: 180px 0 100px; 
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 { font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 800; letter-spacing: -2px; margin-bottom: 20px; line-height: 1.1; }
+
+/* Grid de 3 colunas (vira 2 ou 1 no celular) */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.glass-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    padding: 45px; border-radius: 28px; backdrop-filter: blur(12px);
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.glass-card:hover { transform: translateY(-10px); border-color: var(--accent); background: rgba(255, 255, 255, 0.05); }
+
+.icon-box {
+    width: 50px; height: 50px; background: rgba(59, 130, 246, 0.1);
+    border-radius: 14px; display: flex; align-items: center;
+    justify-content: center; color: var(--accent); margin-bottom: 25px;
+}
+
+.tag { 
+    background: rgba(59, 130, 246, 0.1); border: 1px solid var(--accent);
+    padding: 5px 12px; border-radius: 8px; font-size: 0.75rem; color: var(--accent);
+    margin-right: 8px; margin-top: 15px; display: inline-block;
+}
+
+.btn-primary {
+    background: white; color: black; padding: 16px 35px;
+    border-radius: 14px; text-decoration: none; font-weight: 700;
+    display: inline-block; transition: 0.3s; width: fit-content;
+}
+
+.btn-primary:hover { transform: scale(1.05); box-shadow: 0 0 30px rgba(255,255,255,0.15); }
